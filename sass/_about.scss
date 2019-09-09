@@ -1,0 +1,15 @@
+.about {
+    background: linear-gradient(to right, hsl(196, 64, 67), hsl(202, 83, 41));
+    color: var(--color-grey-light-1);
+    font-size: var(--font-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3.8rem;
+
+    &__container {
+        justify-content: center;
+        flex-direction: column;
+        width: 33.3333%;
+    }
+}

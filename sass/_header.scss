@@ -1,0 +1,77 @@
+.header {
+    background-image: linear-gradient(hsla(209, 6, 17, 0.7), hsla(209, 6, 10, 0.6)), url(../img/nathalie-hurova-lEzMTXWjnFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--color-grey-light-1);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+    &__nav {
+        display: flex;
+        font-size: var(--font-medium);
+        padding: var(--padding-large, --padding-large);
+
+        &--brand {
+            flex: 1;
+        }
+
+        &--list {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+        }
+
+        &--item {
+            width: 12rem;
+
+            &:nth-of-type(3n+1):hover {
+                cursor: pointer;
+
+                a {
+                    color: var(--color-pink);
+                    border-bottom: 2px solid var(--color-pink);
+                }
+            }
+
+            &:nth-of-type(3n+2):hover {
+                cursor: pointer;
+
+                a {
+                    color: var(--color-blue);
+                    border-bottom: 2px solid var(--color-blue);
+                }
+            }
+
+            &:nth-of-type(3n+3):hover {
+                cursor: pointer;
+
+                a {
+                    color: var(--color-green);
+                    border-bottom: 2px solid var(--color-green);
+                }
+            }
+        }
+    }
+
+    &__hero {
+        padding-left: 18%;
+        padding-top: 12%;
+
+        &--title {
+            font-size: var(--font-largest);
+            font-weight: 300;
+            padding-bottom: var(--padding-medium);
+        }
+
+        &--subtitle {
+            font-size: var(--font-large);
+            font-weight: 300;
+            padding-bottom: var(--padding-medium);
+        }
+
+        &--text {
+            font-size: var(--font-medium);
+        }
+    }
+}
