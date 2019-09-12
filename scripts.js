@@ -5,7 +5,7 @@ var screenTimeAnalyzerModal = document.getElementById('modal-screen-time-analyze
 var sproutCard = document.getElementById("sprout-card");
 var hiEdCard = document.getElementById("hi-ed-card");
 var screenTimeAnalyzerCard = document.getElementById("screen-time-analyzer-card");
-var closeButtons = document.querySelectorAll(".close-button");
+var modals = document.querySelectorAll(".modal");
 
 var activeModal = null;
 
@@ -54,7 +54,7 @@ screenTimeAnalyzerCard.addEventListener("click", function () {
 });
 
 // ! refactor this, it's kinda messy
-closeButtons.forEach(function (button) { 
+modals.forEach(function (button) { 
     button.addEventListener("click", function () {
         activeModal.classList.remove("show-modal");
         activeModal = null;
