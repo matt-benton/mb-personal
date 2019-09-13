@@ -1,4 +1,9 @@
 .container {
     display: grid;
-    grid-template-rows: [header-start] 90vh [header-end services-start] 1fr [services-end about-start] 70vh [about-end skills-start] 80vh [skills-end work-start] 70vh [work-end];
+    grid-template-rows: [header-start] 90vh 
+            [header-end services-start] 1fr 
+            [services-end about-start] 70vh 
+            [about-end skills-start] 80vh 
+            [skills-end work-start] 70vh 
+            [work-end footer-start] 20vh [footer-end];
 }
