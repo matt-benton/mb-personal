@@ -14,6 +14,19 @@
 
         &--brand {
             flex: 1;
+
+            &-icon {
+                background-color: var(--color-blue);
+                border-radius: 50%;
+                padding: 7px;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: var(--color-pink);
+                    padding: 10px;
+                }
+            }
         }
 
         &--list {
