@@ -23,11 +23,11 @@ html {
     }
 
     @include respond(phone) {
-        font-size: 30%;
+        font-size: 25%;
     }
 
     @include respond(tab-port) {
-        font-size: 50%;
+        font-size: 45%;
     }
 }
 

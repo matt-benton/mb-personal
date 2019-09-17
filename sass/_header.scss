@@ -86,21 +86,36 @@
     &__hero {
         padding-left: 18%;
         padding-top: 12%;
+        padding-right: 18%;
+
+        @include respond(phone) {
+            padding-left: 4%;
+            padding-right: 4%;
+        }
 
         &--title {
             font-size: var(--font-largest);
             font-weight: 300;
             padding-bottom: var(--padding-medium);
+
+            @include respond(phone) {
+                margin-bottom: var(--margin-medium);
+            }
         }
 
         &--subtitle {
             font-size: var(--font-large);
             font-weight: 300;
             padding-bottom: var(--padding-medium);
+
+            @include respond(tab-port) {
+                padding-bottom: var(--padding-large);
+            }
         }
 
         &--text {
             font-size: var(--font-medium);
+            line-height: var(--line-height-medium);
         }
     }
 }
