@@ -1,3 +1,4 @@
+@import "mixins";
 @import "layouts";
 @import "header";
 @import "services";
@@ -16,6 +17,18 @@
 
 html {
     font-size: 62.5%;  // 1 rem = 10px
+
+    @include respond(tab-land) {
+        font-size: 60%;
+    }
+
+    @include respond(phone) {
+        font-size: 30%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
 }
 
 body {
