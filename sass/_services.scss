@@ -1,13 +1,28 @@
 .services {
     display: flex;
     background-color: var(--color-grey-light-1);
-    padding: 0 25rem;
+    padding: 0 auto;
     z-index: 10;
+    justify-content: center;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+    
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
 
     &__card {
-        width: 280px;
-        margin: 15rem auto;
-        padding: 6.5rem 2.5rem;
+        width: 265px;
+        margin: 150px 30px;
+        padding: 65px 25px;
         background-color: #fff;
         border-top: 8px solid var(--color-pink);
         box-shadow: 0 10px 25px var(--color-grey-light-3);
@@ -15,6 +30,20 @@
         flex-direction: column;
         align-items: center;
         color: var(--color-grey-dark-3);
+
+        @include respond(tab-port) {
+            width: 225px;
+            margin: 50px 10px;
+        }
+
+        @include respond(tab-land) {
+            margin: 25px;
+        }
+
+        @include respond(phone) {
+            width: 225px;
+            margin: 10px;
+        }
 
         &--icon {
             margin-bottom: 3rem;

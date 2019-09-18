@@ -3,7 +3,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 14rem;
     background-color: var(--color-grey-light-1);
-    padding: 0 25rem;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
 
     &__left {
         display: flex;
