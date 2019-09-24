@@ -1,22 +1,4 @@
 .container {
-    display: grid;
-    grid-template-rows: [header-start] 90vh 
-            [header-end services-start] 1fr 
-            [services-end about-start] 70vh 
-            [about-end skills-start] 80vh 
-            [skills-end work-start] 70vh 
-            [work-end footer-start] 20vh [footer-end];
-
-    // * note this is the same as above right now
-    @include respond(tab-land) {
-        grid-template-rows: 90vh 1fr 70vh 80vh 70vh 20vh;
-    }
-
-    @include respond(tab-port) {
-        grid-template-rows: 60vh 1fr 70vh 80vh 70vh 20vh;
-    }
-
-    @include respond(phone) {
-        grid-template-rows: 60vh 1fr 70vh 80vh 70vh 20vh;
-    }
+    display: flex;
+    flex-direction: column;
 }
