@@ -43,7 +43,6 @@
 
         &--list {
             display: flex;
-            display: -webkit-box;
             justify-content: end;
 
             @include respond(phone) {
@@ -53,6 +52,12 @@
 
         &--item {
             width: 12rem;
+            display: flex;
+            justify-content: center;
+
+            a {
+                border-bottom: 2px solid rgba(0,0,0,0);
+            }
 
             &:nth-of-type(3n+1):hover {
                 cursor: pointer;
