@@ -1,3 +1,5 @@
+/* MODALS */
+
 var sproutModal = document.getElementById('modal-sprout');
 var hiEdModal = document.getElementById('modal-hi-ed');
 var screenTimeAnalyzerModal = document.getElementById('modal-screen-time-analyzer');
@@ -9,11 +11,6 @@ var modals = document.querySelectorAll(".modal");
 
 var activeModal = null;
 
-// function toggleModal(modal) {
-//     console.log(modal.classList, 'classList');
-//     modal.classList.toggle("show-modal");
-// }
-
 function showModal (modal) {
     activeModal = modal;
     modal.classList.add("show-modal");
@@ -22,9 +19,6 @@ function showModal (modal) {
 
 
 function windowOnClick (event) {
-    // if (event.target === modal) {
-    //     toggleModal();
-    // }
     switch (event.target) {
         case sproutCard:
             showModal(sproutModal);
@@ -53,11 +47,26 @@ screenTimeAnalyzerCard.addEventListener("click", function () {
     activeModal.classList.add("show-modal");
 });
 
-// ! refactor this, it's kinda messy
 modals.forEach(function (button) { 
     button.addEventListener("click", function () {
         activeModal.classList.remove("show-modal");
         activeModal = null;
     });
 });
-//window.addEventListener("click", hideModal);
+
+/* MOBILE NAV LIST */
+document.getElementById('mobile-nav-icon').addEventListener('click', function () {
+    document.getElementById('mobile-nav').classList.add('open');
+});
+
+document.getElementById('mobile-nav-close-icon').addEventListener('click', function () {
+    document.getElementById('mobile-nav').classList.remove('open');
+});
+
+var mobileNavLinks = document.querySelectorAll('.mobile-nav__list--item');
+
+mobileNavLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+        document.getElementById('mobile-nav').classList.remove('open');
+    });
+});

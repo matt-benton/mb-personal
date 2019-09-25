@@ -1,0 +1,33 @@
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-grey-dark-1);
+    z-index: 9999;
+    font-size: var(--font-large);
+    transform: translateY(-100%);
+    transition: transform .4s ease;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--item {
+            padding: 10px;
+        }
+    }
+
+    &__close {
+        display: flex;
+        justify-content: end;
+        padding: 5px 10px;
+        fill: #fff;
+    }
+}
+
+.open {
+    transform: translateY(0);
+}
