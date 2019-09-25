@@ -20,15 +20,15 @@ html {
     font-size: 62.5%;  // 1 rem = 10px
 
     @include respond(tab-land) {
-        font-size: 60%;
-    }
-
-    @include respond(phone) {
-        font-size: 25%;
+        font-size: 55%;
     }
 
     @include respond(tab-port) {
         font-size: 45%;
+    }
+
+    @include respond(phone) {
+        font-size: 25%;
     }
 }
 
