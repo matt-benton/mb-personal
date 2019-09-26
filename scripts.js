@@ -11,46 +11,29 @@ var modals = document.querySelectorAll(".modal");
 
 var activeModal = null;
 
-function showModal (modal) {
-    activeModal = modal;
-    modal.classList.add("show-modal");
-}
-
-
-
-function windowOnClick (event) {
-    switch (event.target) {
-        case sproutCard:
-            showModal(sproutModal);
-            break;
-        case hiEdCard:
-            showModal(hiEdModal);
-            break;
-        case screenTimeAnalyzerCard:
-            showModal(screenTimeAnalyzerModal);
-            break;
-    }
-}
-
 sproutCard.addEventListener("click", function () {
     activeModal = sproutModal;
     activeModal.classList.add("show-modal");
+    document.body.style.overflow = 'hidden';
 });
 
 hiEdCard.addEventListener("click", function () {
     activeModal = hiEdModal;
     activeModal.classList.add("show-modal");
+    document.body.style.overflow = 'hidden';
 });
 
 screenTimeAnalyzerCard.addEventListener("click", function () {
     activeModal = screenTimeAnalyzerModal;
     activeModal.classList.add("show-modal");
+    document.body.style.overflow = 'hidden';
 });
 
 modals.forEach(function (button) { 
     button.addEventListener("click", function () {
         activeModal.classList.remove("show-modal");
         activeModal = null;
+        document.body.style.overflow = '';
     });
 });
 
