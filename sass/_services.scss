@@ -1,28 +1,15 @@
 .services {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: var(--color-grey-light-1);
-    padding: 0 auto;
+    padding: 7rem 0;
     z-index: 10;
-    justify-content: center;
-
-    @include respond(tab-land) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 50px;
-    }
-    
-    @include respond(phone) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 10px;
-    }
 
     &__card {
-        width: 265px;
-        margin: 150px 30px;
-        padding: 65px 25px;
+        width: 285px;
+        min-width: 265px;
+        padding: 65px 40px;
         background-color: #fff;
         border-top: 8px solid var(--color-pink);
         box-shadow: 0 10px 25px var(--color-grey-light-3);
@@ -61,6 +48,7 @@
 
         &--text {
             font-size: var(--font-small);
+            line-height: var(--line-height-small);
         }
     }
 }
