@@ -22,8 +22,9 @@
 
     &__close {
         display: flex;
+        display: -webkit-box;
         justify-content: end;
-        padding: 5px 10px;
+        padding: var(--padding-large);
         fill: #fff;
     }
 }
