@@ -45,6 +45,11 @@
     background-color: var(--color-grey-dark-2);
     box-shadow: 5px 35px 50px var(--color-grey-dark-1);
     border-radius: 5px;
+    width: 80rem;
+
+    @include respond (phone) {
+        width: 95vw;
+    }
 
     &__image-container {
         max-height: 400px;
