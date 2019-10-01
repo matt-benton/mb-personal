@@ -1,12 +1,25 @@
 .footer {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 1fr;
-    grid-template-rows: 1fr 1fr;
     font-size: var(--font-medium);
-    color: var(--color-grey-dark-3);
-    margin: auto auto;
+    color: var(--color-grey-light-1);
+    background-color: var(--color-grey-dark-2);
     padding: 6%;
-    align-items: center;
+    border-top: 1px solid var(--color-grey-dark-5);
+
+    &__row {
+        
+        &--first {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: var(--padding-large);
+        }
+
+        &--second {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
     &__dot {
         height: 25px;
