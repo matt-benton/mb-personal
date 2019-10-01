@@ -45,3 +45,8 @@ a {
         color: var(--color-grey-light-2);
     }
 }
+
+::selection {
+    color: var(--color-pink);
+    background-color: var(--color-grey-dark-2);
+}
