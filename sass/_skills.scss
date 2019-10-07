@@ -1,29 +1,36 @@
 .skills {
     display: flex;
+    flex-direction: row;
     background-color: var(--color-grey-light-1);
-    flex-wrap: wrap;
-    padding: 10%;
-    justify-content: center;
+    padding: 5% 10%;
+    justify-content: space-evenly;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
+
+
 
     &__left {
         display: flex;
         align-items: center;
         justify-content: end;
-        flex: 1 1 350px;
+        margin: 5%;
+
+
 
         &--text {
             color: var(--color-grey-dark-3);
             font-size: var(--font-large);
             font-weight: 300;
             line-height: var(--line-height-large);
-            padding: 10%;
         }
     }
 
     &__right {
         display: flex;
         align-items: center;
-        flex: 1 1 400px;
+        margin: 5%;
     }
 
 
@@ -36,25 +43,28 @@
             justify-content: center;
             align-items: center;
             padding: var(--padding-medium);
-            transition: all .1s;
-            min-height: 15rem;
-            min-width: 15rem;
-            flex-grow: 1;
+            margin: var(--margin-small);
+            font-size: var(--font-large);
+            border-radius: 5px;
+            color: var(--color-grey-dark-2);
 
-            &:hover {
-                padding: var(--padding-medium);
+            &:nth-of-type(3n+1) {
+                background-color: var(--color-pink-transparent);
+            }
 
-                .skills__grid--logo {
-                    max-height: 15rem;
-                    max-width: 15rem;
-                }
+            &:nth-of-type(3n+2) {
+                background-color: var(--color-blue-transparent);
+            }
+
+            &:nth-of-type(3n+3) {
+                background-color: var(--color-green-transparent);
             }
         }
 
         &--logo {
-            max-height: 10rem;
-            max-width: 10rem;
-            transition: all .3s;
+            max-height: var(--font-large);
+            max-width: var(--font-large);
+            margin-right: 1rem;
         }
     }
 }
