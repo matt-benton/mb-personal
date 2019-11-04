@@ -15,11 +15,11 @@
             height: 41rem;
             width: 41rem;
             border-radius: 50%;
-            transform: rotate(90deg);
             float: left;
             shape-outside: circle();
             margin: 3rem;
             border: 2px solid white;
+            filter: brightness(1.5) saturate(.8);
 
             @include respond(phone) {
                 height: 20rem;
