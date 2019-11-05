@@ -1,25 +1,30 @@
 .skills {
-    display: flex;
-    flex-direction: row;
     background-color: var(--color-grey-light-1);
-    padding: 5% 10%;
+    padding: var(--padding-large);
     justify-content: space-evenly;
+    font-size: var(--font-large);
 
-    @include respond(tab-land) {
-        flex-direction: column;
+    &__container {
+        display: flex;
+        flex-direction: row;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
     }
-
-
 
     &__left {
         display: flex;
         align-items: center;
         justify-content: end;
-        margin: 5%;
+        margin-right: var(--margin-large);
+
+        @include respond(tab-land) {
+            margin-right: 0;
+        }
 
         &--text {
             color: var(--color-grey-dark-3);
-            font-size: var(--font-large);
             font-weight: 300;
             line-height: var(--line-height-large);
         }
@@ -28,7 +33,11 @@
     &__right {
         display: flex;
         align-items: center;
-        margin: 5%;
+        margin-left: var(--margin-large);
+
+        @include respond(tab-land) {
+            margin-left: 0;
+        }
     }
 
 
@@ -42,7 +51,6 @@
             align-items: center;
             padding: var(--padding-medium);
             margin: var(--margin-small);
-            font-size: var(--font-large);
             border-radius: 5px;
             color: var(--color-grey-dark-2);
 

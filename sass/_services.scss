@@ -5,6 +5,10 @@
     background-color: var(--color-grey-light-1);
     padding: 7rem 0;
 
+    @include respond(phone) {
+        padding: 1rem 0;
+    }
+
     &__card {
         width: 285px;
         min-width: 265px;

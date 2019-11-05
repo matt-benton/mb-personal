@@ -5,13 +5,13 @@
     color: var(--color-grey-light-1);
     display: grid;
     grid-template-rows: min-content 1fr;
+    padding: var(--padding-large);
 
     &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: var(--font-medium);
-        padding: var(--padding-large);
 
         &--brand {
 
@@ -93,8 +93,8 @@
         padding: 16% 12%;
 
         @include respond(phone) {
-            padding-left: 4%;
-            padding-right: 4%;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         &--title {

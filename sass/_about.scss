@@ -5,11 +5,15 @@
     line-height: var(--line-height-medium);
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: var(--padding-large);
 
     &__container {
         width: 100rem;
         margin: 16rem auto;
+
+        @include respond(phone) {
+            margin: 1rem auto;
+        }
 
         &--image {
             height: 41rem;
