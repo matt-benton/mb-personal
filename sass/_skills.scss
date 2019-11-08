@@ -6,7 +6,9 @@
 
     &__container {
         display: flex;
-        flex-direction: row;
+        background-color: #fff;
+        box-shadow: 0 10px 25px var(--color-grey-light-3);
+        padding: var(--padding-large);
 
         @include respond(tab-land) {
             flex-direction: column;
@@ -16,8 +18,7 @@
     &__left {
         display: flex;
         align-items: center;
-        justify-content: end;
-        margin-right: var(--margin-large);
+        padding: var(--padding-large);
 
         @include respond(tab-land) {
             margin-right: 0;
@@ -33,7 +34,7 @@
     &__right {
         display: flex;
         align-items: center;
-        margin-left: var(--margin-large);
+        padding: var(--padding-large);
 
         @include respond(tab-land) {
             margin-left: 0;
