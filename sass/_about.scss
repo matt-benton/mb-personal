@@ -23,7 +23,7 @@
             shape-outside: circle();
             margin: 3rem;
             border: 2px solid white;
-            filter: brightness(1.5) saturate(.8);
+            filter: saturate(1.2);
 
             @include respond(phone) {
                 height: 20rem;
