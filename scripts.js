@@ -1,12 +1,13 @@
 /* MODALS */
-
 var sproutModal = document.getElementById('modal-sprout');
 var hiEdModal = document.getElementById('modal-hi-ed');
 var screenTimeAnalyzerModal = document.getElementById('modal-screen-time-analyzer');
+var billForceOneModal = document.getElementById('modal-bill-force-one');
 
 var sproutCard = document.getElementById("sprout-card");
 var hiEdCard = document.getElementById("hi-ed-card");
 var screenTimeAnalyzerCard = document.getElementById("screen-time-analyzer-card");
+var billForceOneCard = document.getElementById("bill-force-one-card");
 var modals = document.querySelectorAll(".modal");
 
 var activeModal = null;
@@ -25,6 +26,12 @@ hiEdCard.addEventListener("click", function () {
 
 screenTimeAnalyzerCard.addEventListener("click", function () {
     activeModal = screenTimeAnalyzerModal;
+    activeModal.classList.add("show-modal");
+    document.body.style.overflow = 'hidden';
+});
+
+billForceOneCard.addEventListener("click", function () {
+    activeModal = billForceOneModal;
     activeModal.classList.add("show-modal");
     document.body.style.overflow = 'hidden';
 });
