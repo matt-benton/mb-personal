@@ -1,6 +1,6 @@
 .skills {
     background-color: var(--color-grey-light-1);
-    padding: var(--padding-large);
+    padding: var(--spacing-large);
     justify-content: space-evenly;
     font-size: var(--font-large);
 
@@ -8,7 +8,7 @@
         display: flex;
         background-color: #fff;
         box-shadow: 0 10px 25px var(--color-grey-light-3);
-        padding: var(--padding-large);
+        padding: var(--spacing-large);
 
         @include respond(tab-land) {
             flex-direction: column;
@@ -18,7 +18,7 @@
     &__left {
         display: flex;
         align-items: center;
-        padding: var(--padding-large);
+        padding: var(--spacing-large);
 
         @include respond(tab-land) {
             margin-right: 0;
@@ -34,7 +34,7 @@
     &__right {
         display: flex;
         align-items: center;
-        padding: var(--padding-large);
+        padding: var(--spacing-large);
 
         @include respond(tab-land) {
             margin-left: 0;
@@ -50,8 +50,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: var(--padding-medium);
-            margin: var(--margin-small);
+            padding: var(--spacing-medium);
+            margin: var(--spacing-small);
             border-radius: 5px;
             color: var(--color-grey-dark-2);
 

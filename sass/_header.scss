@@ -5,7 +5,7 @@
     color: var(--color-grey-light-1);
     display: grid;
     grid-template-rows: min-content 1fr;
-    padding: var(--padding-large);
+    padding: var(--spacing-large);
 
     &__nav {
         display: flex;
@@ -100,20 +100,20 @@
         &--title {
             font-size: var(--font-largest);
             font-weight: 300;
-            padding-bottom: var(--padding-medium);
+            padding-bottom: var(--spacing-medium);
 
             @include respond(phone) {
-                margin-bottom: var(--margin-medium);
+                margin-bottom: var(--spacing-medium);
             }
         }
 
         &--subtitle {
             font-size: var(--font-large);
             font-weight: 300;
-            padding-bottom: var(--padding-medium);
+            padding-bottom: var(--spacing-medium);
 
             @include respond(tab-port) {
-                padding-bottom: var(--padding-large);
+                padding-bottom: var(--spacing-large);
             }
         }
 

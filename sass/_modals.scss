@@ -62,23 +62,23 @@
     }
 
     &__text-container {
-        padding: var(--padding-large);
+        padding: var(--spacing-large);
     }
 
     &__title {
         font-size: var(--font-large);
-        margin-bottom: var(--margin-medium);
+        margin-bottom: var(--spacing-medium);
     }
 
     &__subtitle {
         font-size: var(--font-medium);
-        margin-bottom: var(--margin-large);
+        margin-bottom: var(--spacing-large);
     }
 
     &__text {
         font-size: var(--font-small);
         color: var(--color-grey-light-1);
-        margin-bottom: var(--margin-large);
+        margin-bottom: var(--spacing-large);
         line-height: var(--line-height-small);
     }
 

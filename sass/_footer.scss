@@ -11,7 +11,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-bottom: var(--padding-large);
+            padding-bottom: var(--spacing-large);
         }
 
         &--second {
@@ -26,7 +26,7 @@
         width: 25px;
         border-radius: 50%;
         display: inline-block;
-        margin: var(--margin-medium);
+        margin: var(--spacing-medium);
 
         &:nth-of-type(1) {
             background-color: var(--color-pink);
@@ -42,7 +42,7 @@
     }
 
     &__contact-text {
-        margin-left: var(--margin-large);
+        margin-left: var(--spacing-large);
     }
 
     &__credit-text {
