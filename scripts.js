@@ -23,3 +23,20 @@ const selectImage = function () {
 }
 
 thumbnails.forEach(thumbnail => thumbnail.addEventListener('click', selectImage));
+
+
+/* Full size screen shot modal */
+const modal = document.querySelector('.modal');
+const largeProjectImages = document.querySelectorAll('.project__large-image');
+const fullScreenImage = document.querySelector('.full-screen-image');
+
+largeProjectImages.forEach(img => {
+    img.addEventListener('click', function () {
+        fullScreenImage.src = this.src;
+        modal.classList.remove('close');
+    });
+});
+
+modal.addEventListener('click', function () {
+    this.classList.add('close');
+});
