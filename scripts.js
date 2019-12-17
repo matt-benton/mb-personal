@@ -1,49 +1,3 @@
-/* MODALS */
-var sproutModal = document.getElementById('modal-sprout');
-var hiEdModal = document.getElementById('modal-hi-ed');
-var screenTimeAnalyzerModal = document.getElementById('modal-screen-time-analyzer');
-var billForceOneModal = document.getElementById('modal-bill-force-one');
-
-var sproutCard = document.getElementById("sprout-card");
-var hiEdCard = document.getElementById("hi-ed-card");
-var screenTimeAnalyzerCard = document.getElementById("screen-time-analyzer-card");
-var billForceOneCard = document.getElementById("bill-force-one-card");
-var modals = document.querySelectorAll(".modal");
-
-var activeModal = null;
-
-sproutCard.addEventListener("click", function () {
-    activeModal = sproutModal;
-    activeModal.classList.add("show-modal");
-    document.body.style.overflow = 'hidden';
-});
-
-hiEdCard.addEventListener("click", function () {
-    activeModal = hiEdModal;
-    activeModal.classList.add("show-modal");
-    document.body.style.overflow = 'hidden';
-});
-
-screenTimeAnalyzerCard.addEventListener("click", function () {
-    activeModal = screenTimeAnalyzerModal;
-    activeModal.classList.add("show-modal");
-    document.body.style.overflow = 'hidden';
-});
-
-billForceOneCard.addEventListener("click", function () {
-    activeModal = billForceOneModal;
-    activeModal.classList.add("show-modal");
-    document.body.style.overflow = 'hidden';
-});
-
-modals.forEach(function (button) { 
-    button.addEventListener("click", function () {
-        activeModal.classList.remove("show-modal");
-        activeModal = null;
-        document.body.style.overflow = '';
-    });
-});
-
 /* MOBILE NAV LIST */
 document.getElementById('mobile-nav-icon').addEventListener('click', function () {
     document.getElementById('mobile-nav').classList.add('open');
@@ -60,3 +14,12 @@ mobileNavLinks.forEach(function (link) {
         document.getElementById('mobile-nav').classList.remove('open');
     });
 });
+
+/*  Project Screen Shot Image Grid */
+const thumbnails = document.querySelectorAll('.project__thumbnail');
+
+const selectImage = function () {
+    this.parentNode.previousElementSibling.src = this.src;
+}
+
+thumbnails.forEach(thumbnail => thumbnail.addEventListener('click', selectImage));

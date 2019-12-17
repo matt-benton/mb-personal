@@ -70,6 +70,10 @@
         cursor: pointer;
         margin: var(--spacing-small);
         border-radius: 5px;
+
+        @include respond (phone) {
+            max-height: 8rem;
+        }
     }
 
     &__links {
