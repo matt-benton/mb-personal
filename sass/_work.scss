@@ -56,8 +56,10 @@
 
     &__large-image {
         max-width: 100%;
+        max-height: 50rem;
         border-radius: 5px;
         cursor: pointer;
+        justify-self: center;
     }
 
     &__thumbnails {
@@ -66,7 +68,7 @@
     }
 
     &__thumbnail {
-        max-width: 100%;
+        max-width: 10rem;
         max-height: 10rem;
         cursor: pointer;
         margin: var(--spacing-small);
