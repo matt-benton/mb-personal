@@ -19,7 +19,7 @@ mobileNavLinks.forEach(function (link) {
 const thumbnails = document.querySelectorAll('.project__thumbnail');
 
 const selectImage = function () {
-    this.parentNode.previousElementSibling.src = this.src;
+    this.parentNode.previousElementSibling.src = this.firstElementChild.src;
 }
 
 thumbnails.forEach(thumbnail => thumbnail.addEventListener('click', selectImage));
