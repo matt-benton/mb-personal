@@ -22,6 +22,9 @@
     @include respond(tab-land) {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+        grid-template-areas: 
+            "txt"
+            "img";
     }
 
     &__container {
@@ -46,6 +49,18 @@
 
             @include respond (tab-land) {
                 align-items: center;
+            }
+        }
+
+        &--text {
+            @include respond(tab-land) {
+                grid-area: txt;
+            }
+        }
+
+        &--image {
+            @include respond(tab-land) {
+                grid-area: img;
             }
         }
     }
