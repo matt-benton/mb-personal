@@ -36,22 +36,6 @@
             padding: var(--spacing-larger);
         }
 
-        &--left {
-            align-items: end;
-
-            @include respond (tab-land) {
-                align-items: center;
-            }
-        }
-
-        &--right {
-            align-items: start;
-
-            @include respond (tab-land) {
-                align-items: center;
-            }
-        }
-
         &--text {
             @include respond(tab-land) {
                 grid-area: txt;
