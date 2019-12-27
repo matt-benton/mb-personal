@@ -124,6 +124,10 @@
             background-color: var(--color-grey-dark-1);
             border: 0;
             cursor: pointer;
+
+            &:hover {
+                background-color: var(--color-grey-dark-5);
+            }
         }
     }
 }
