@@ -3,7 +3,7 @@
     color: var(--color-grey-light-1);
     box-shadow: inset 0 5px 20px var(--color-grey-dark-3);
     z-index: 50;
-    padding: 0 var(--spacing-largest);
+    padding: var(--spacing-large) var(--spacing-largest);
 
     @include respond(tab-port) {
         padding: var(--spacing-large);
@@ -17,9 +17,8 @@
 .project {
     display: grid;
     grid-template-columns:  50% 50%;
-    margin: 0;
-    padding: var(--spacing-largest) 0;
-    border-bottom: 1px solid var(--color-grey-dark-4);
+    margin: var(--spacing-large) 0;
+    box-shadow: 0 2px 10px var(--color-grey-dark-1);
 
     @include respond(tab-land) {
         grid-template-columns: 1fr;
@@ -37,6 +36,7 @@
         display: flex;
         flex-direction: column;
         padding: var(--spacing-largest);
+        background-color: var(--color-grey-dark-3);
 
         @include respond(tab-port) {
             padding: var(--spacing-larger);
@@ -82,6 +82,8 @@
         border-radius: 2px;
         cursor: pointer;
         justify-self: center;
+        box-shadow: 0 15px 15px var(--color-grey-dark-2);
+        background-color: var(--color-grey-dark-2);
     }
 
     &__thumbnails {
@@ -98,6 +100,7 @@
         cursor: pointer;
         margin: var(--spacing-small);
         border-radius: 5px;
+        box-shadow: 0 15px 15px var(--color-grey-dark-2);
 
         @include respond (phone) {
             max-height: 8rem;
