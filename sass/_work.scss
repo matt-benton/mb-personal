@@ -15,17 +15,12 @@
 }
 
 .project {
-    display: grid;
-    grid-template-columns:  50% 50%;
+    display: flex;
     margin: var(--spacing-large) 0;
     box-shadow: 0 2px 10px var(--color-grey-dark-1);
 
     @include respond(tab-land) {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-            "txt"
-            "img";
+        flex-direction: column;
     }
 
     &:last-of-type {
@@ -37,6 +32,7 @@
         flex-direction: column;
         padding: var(--spacing-largest);
         background-color: var(--color-grey-dark-3);
+        flex: 1;
 
         @include respond(tab-port) {
             padding: var(--spacing-larger);
@@ -44,13 +40,13 @@
 
         &--text {
             @include respond(tab-land) {
-                grid-area: txt;
+                order: 1;
             }
         }
 
         &--image {
             @include respond(tab-land) {
-                grid-area: img;
+                order: 2;
             }
         }
     }
