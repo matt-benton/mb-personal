@@ -76,8 +76,6 @@
         border-radius: 2px;
         cursor: pointer;
         justify-self: center;
-        box-shadow: 0 15px 15px var(--color-grey-dark-2);
-        background-color: var(--color-grey-dark-2);
     }
 
     &__thumbnails {
@@ -94,7 +92,6 @@
         cursor: pointer;
         margin: var(--spacing-small);
         border-radius: 5px;
-        box-shadow: 0 15px 15px var(--color-grey-dark-2);
 
         @include respond (phone) {
             max-height: 8rem;
