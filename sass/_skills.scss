@@ -4,6 +4,10 @@
     justify-content: space-evenly;
     font-size: var(--font-large);
 
+    @include respond(phone) {
+        padding: 0 0;
+    }
+
     &__container {
         display: flex;
         background-color: #fff;
@@ -28,6 +32,10 @@
             color: var(--color-grey-dark-3);
             font-weight: 300;
             line-height: var(--line-height-large);
+
+            @include respond(phone) {
+                line-height: var(--line-height-medium);
+            }
         }
     }
 
